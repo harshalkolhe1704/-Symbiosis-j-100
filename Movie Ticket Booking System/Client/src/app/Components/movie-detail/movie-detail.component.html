@@ -1,0 +1,25 @@
+
+
+   <div class="container">
+    <h2>Movie Details</h2>
+    <div *ngIf="movie" class="movie-details">
+      <!-- Left Section: Image -->
+      <div class="movie-image">
+        <img src="{{movie.posterUrl}}" alt="{{ movie.title }}" class="poster-img" />
+      </div>
+  
+      <div class="movie-info">
+        <h3>{{ movie.title }}</h3>
+        <p><strong>Genre:</strong> {{ movie.genre }}</p>
+        <p><strong>Description:</strong> {{ movie.description }}</p>
+        <p><strong>Release Date:</strong> {{ movie.releaseDate | date }}</p>
+  
+        <div class="button-group">
+          <button class="btn btn-secondary" (click)="backTolist()">Back to List</button>
+          <button class="btn btn-primary" (click)="editMovie()">Edit Movie</button>
+          <button class="btn btn-danger" (click)="deleteMovie()">Delete Movie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

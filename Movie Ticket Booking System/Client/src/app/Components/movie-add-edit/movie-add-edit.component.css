@@ -1,0 +1,101 @@
+
+/* General styling for the movie form container */
+.movie-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heading styles */
+  .movie-form h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form label styles */
+  .movie-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Input and textarea styles */
+  .movie-form input,
+  .movie-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus effect for inputs */
+  .movie-form input:focus,
+  .movie-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Textarea specific styling */
+  .movie-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Button styling */
+  .movie-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for button */
+  .movie-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .movie-form {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .movie-form h2 {
+      font-size: 2rem;
+    }
+  
+    .movie-form label {
+      font-size: 1rem;
+    }
+  
+    .movie-form input,
+    .movie-form textarea {
+      font-size: 0.95rem;
+    }
+  
+    .movie-form button {
+      font-size: 1rem;
+    }
+  }
+  

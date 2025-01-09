@@ -1,0 +1,238 @@
+
+/* General container for movie details */
+.movie-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Movie title */
+  .movie-detail h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Movie poster styling */
+  .movie-poster {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-poster:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Movie details information */
+  .movie-detail p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  /* Movie details labels */
+  .movie-detail strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effects for buttons */
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Additional button styling for 'Delete' */
+  button:last-child {
+    background-color: #dc3545;
+  }
+  
+  button:last-child:hover {
+    background-color: #c82333;
+    transform: translateY(-3px);
+  }
+  
+  /* Back to list button: smaller padding and centered alignment */
+  button:first-child {
+    background-color: #28a745;
+    width: 100%;
+  }
+  
+  button:first-child:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  /* Add a little space between buttons on larger screens */
+  @media (min-width: 768px) {
+    button {
+      width: auto;
+    }
+  
+    .movie-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-detail button {
+      width: 200px;
+    }
+  }
+  
+  /* Responsive design adjustments for mobile */
+  @media (max-width: 768px) {
+    .movie-detail {
+      padding: 15px;
+    }
+  
+    .movie-poster {
+      max-width: 100%;
+    }
+  
+    .movie-detail h2 {
+      font-size: 2rem;
+    }
+  
+    .movie-detail p {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /*=========================================*/
+
+  /* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Flexbox for Layout */
+.movie-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;  /* Adds space between the image and the details */
+  margin-top: 20px;
+}
+
+/* Image Styling */
+.movie-image {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.poster-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Details Section Styling */
+.movie-info {
+  flex: 2;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-info h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.movie-info p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.movie-info p strong {
+  color: #333;
+}
+
+/* Button Group Styling */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  opacity: 0.9;
+}
+
+/* Individual button colors */
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn:hover {
+  opacity: 0.8;
+}

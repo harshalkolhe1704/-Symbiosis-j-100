@@ -1,0 +1,123 @@
+/* General Container */
+.container {
+  width: full;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Movie Grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Always 4 items per row */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Movie Item */
+.movie-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Movie Poster */
+.movie-poster img {
+  width: 100%;               /* Adjust to container width */
+  height: 300px;             /* Set fixed height */
+  border-radius: 8px;        /* Rounded corners */
+  object-fit: cover;         /* Ensures image fills the space */
+}
+
+/* Movie Title */
+.movie-item h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* View Details Button */
+.movie-item button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-item button:hover {
+  background-color: #138496;
+}
+
+/* Add Movie Button */
+.add-movie-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-movie-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    gap: 10px;
+  }
+
+  .movie-item {
+    padding: 15px;
+  }
+
+  .movie-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .movie-poster img {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+
+  .add-movie-btn {
+    width: 180px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row on extra small screens */
+  }
+
+  .movie-poster img {
+    height: 200px; /* Adjust height for extra small screens */
+  }
+}

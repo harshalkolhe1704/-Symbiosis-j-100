@@ -1,0 +1,100 @@
+
+<div class="movie-form">
+  <h2>{{ isEditMode ? 'Edit Movie' : 'Add Movie' }}</h2>
+  
+  <!-- Form for adding or editing a movie -->
+  <form (ngSubmit)="saveMovie()">
+    
+    <!-- Movie Title -->
+    <label for="title">Title</label>
+    <input 
+      id="title" 
+      [(ngModel)]="movie.title" 
+      name="title" 
+      required 
+      placeholder="Enter movie title"
+    />
+    
+    <!-- Movie Description -->
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      [(ngModel)]="movie.description"
+      name="description"
+      required
+      placeholder="Enter movie description"
+    ></textarea>
+    
+    <!-- Movie Genre -->
+    <label for="genre">Genre</label>
+    <input
+      id="genre"
+      [(ngModel)]="movie.genre"
+      name="genre"
+      required
+      placeholder="Enter movie genre"
+    />
+    
+    <!-- Movie Release Date -->
+    <label for="releaseDate">Release Date</label>
+    <input
+      type="date"
+      id="releaseDate"
+      [(ngModel)]="movie.releaseDate"
+      name="releaseDate"
+      required
+    />
+    
+    <!-- Movie Director -->
+    <label for="director">Director</label>
+    <input
+      id="director"
+      [(ngModel)]="movie.director"
+      name="director"
+      placeholder="Enter movie director"
+    />
+    
+    <!-- Movie Duration -->
+    <label for="duration">Duration (minutes)</label>
+    <input
+      type="number"
+      id="duration"
+      [(ngModel)]="movie.duration"
+      name="duration"
+      required
+      placeholder="Enter movie duration"
+    />
+    
+    <!-- Movie Rating -->
+    <!-- <label for="rating">Rating</label>
+    <input
+      type="number"
+      id="rating"
+      [(ngModel)]="movie.rating"
+      name="rating"
+      min="0"
+      max="10"
+      required
+      placeholder="Enter movie rating"
+    /> -->
+    
+    <!-- Movie Image URL -->
+    <label for="imageUrl">Image URL</label>
+    <input
+      id="imageUrl"
+      [(ngModel)]="movie.posterUrl"
+      name="imageUrl"
+      required
+      placeholder="Enter image URL"
+    />
+    
+    <!-- Submit Button -->
+    <button type="submit">{{ isEditMode ? 'Update Movie' : 'Add Movie' }}</button>
+  </form>
+</div>
+
+<!-- Display Movie Data (for debugging purposes) -->
+<!-- <div *ngIf="movie">
+  <h3>Movie Data:</h3>
+  <pre>{{ movie | json }}</pre>
+</div> -->b 

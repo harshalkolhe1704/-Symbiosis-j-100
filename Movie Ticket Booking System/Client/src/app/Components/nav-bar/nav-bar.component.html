@@ -1,0 +1,26 @@
+<!-- <p>nav-bar works!</p> -->
+<div class="navbar-main">
+    <!-- Logo Section -->
+    <div class="logo">
+        <h1 [routerLink]="''">MoviesLogo</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <ul>
+            <li *ngFor="let item of navMenus" [routerLink]="item.path">
+                {{ item.item }}
+            </li>
+        </ul>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-button">
+        <button routerLink="/login">
+            logout
+        </button>
+        <!-- <button routerLink="/register">
+            Register
+        </button> -->
+    </div>
+</div>

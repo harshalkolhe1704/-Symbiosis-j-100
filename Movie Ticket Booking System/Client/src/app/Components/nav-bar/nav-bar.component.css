@@ -1,0 +1,87 @@
+/* General Styling for Navbar */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(31, 41, 55);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 15px; /* Rounded curves for the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #f1c40f; /* Golden color for hover effect */
+}
+
+/* Navigation Buttons */
+.nav-button button {
+    background-color: rgb(185, 28, 28);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #151111;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .nav-button {
+        margin-top: 10px;
+    }
+
+    .nav-button button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}

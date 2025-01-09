@@ -1,0 +1,18 @@
+
+  <div class="container">
+    <h2>Added Movie List</h2>
+    <div class="movie-grid">
+      <div *ngFor="let movie of movies" class="movie-item">
+        <div class="movie-poster">
+          <img [src]="movie.posterUrl" alt="{{ movie.title }}">
+        </div>
+        <h3>{{ movie.title }}</h3>
+        <button class="btn btn-info" (click)="onViewDetails(movie.id)">View Details</button>
+      </div>
+    </div>
+  
+    <!-- Add New Movie button at the bottom -->
+    <button class="btn btn-primary add-movie-btn" (click)="addNewMovie()">Add New Movie</button>
+  </div>
+  
+  

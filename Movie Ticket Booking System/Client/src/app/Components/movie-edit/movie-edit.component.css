@@ -1,0 +1,101 @@
+/* Container for the form */
+.movie-edit {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .movie-edit h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Input and textarea fields */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Disabled fields styling */
+  .form-group input[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  
+  /* Textarea specific styling */
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Action Buttons */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-actions button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 48%;
+  }
+  
+  .form-actions button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .form-actions .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .form-actions .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-actions .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .form-actions .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  
